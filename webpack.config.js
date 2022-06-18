@@ -11,8 +11,8 @@ module.exports = {
 	},
 	plugins: [
 		new webpack.DefinePlugin({
-			'process.env': JSON.stringify({ A: 'a' }),
-			// 'process.env.A': JSON.stringify('a'),
+			// 'process.env': '(' + JSON.stringify({ A: 'a' }) + ')',
+			'process.env.A': JSON.stringify('a'),
 			// 'process.env.NODE_ENV': JSON.stringify('development')
 		}),
 	],
